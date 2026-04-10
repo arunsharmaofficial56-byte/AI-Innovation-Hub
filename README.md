@@ -45,7 +45,7 @@ Welcome to the **AI Innovation Hub** – a curated collection of high-impact Art
 ## 🏃 How to Explore
 1. Clone the repository:
    ```bash
-   git clone https://github.com/[Your-Username]/AI-Innovation-Hub.git
+   git clone https://github.com/arunsharmaofficial56-byte/AI-Innovation-Hub.git
    ```
 2. Navigate to any project folder (e.g., `cd 05_AI_Object_Detection_System`).
 3. Follow the specific instruction in that project's `README.md`.
@@ -54,8 +54,6 @@ Welcome to the **AI Innovation Hub** – a curated collection of high-impact Art
 
 ## 👤 About the Developer
 I am **Arun Sharma**, a BCA student and AI/ML Specialist dedicated to engineering the future of intelligent automation.
-
-- **Check out my Live Portfolio**: [Live Interactive Portfolio](./04_Personal_Portfolio/index.html)
 - **Email**: arunsharmaoffiicial56@gmail.com
 - **Let's Connect**: Open for collaborations and AI-driven innovations.
 
