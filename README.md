@@ -1,26 +1,26 @@
-# GuardianAI | Forensic News Analysis System 🛡️
+# Student Performance Predictor 🎓📈
 
-GuardianAI is a professional-grade, AI-powered tool designed to detect misinformation and fabricated news patterns. By leveraging Advanced Natural Language Processing (NLP) and Machine Learning, it provides a forensic-level scan of news articles to ensure information integrity.
+Student Performance Predictor is an end-to-end Machine Learning web application designed to forecast a student's final exam score based on their academic and lifestyle habits. It leverages a robust regression pipeline to provide data-driven insights for educators and students.
 
 ## 🚀 Key Features
-- **Forensic Linguistic Scan**: Deep analysis of text patterns, token relations, and stylistic markers to identify non-veridical content.
-- **Real-time Verification**: Instant classification of news as "Verified" or "Mistrusted" with high-fidelity accuracy.
-- **Confidence Telemetry**: Visual probability scoring (Unreliability Index) to show the engine's certainty.
-- **Guardian Dashboard**: A modern, glassmorphism-inspired interface built with Streamlit for a premium user experience.
-- **Full-Stack ML Pipeline**: Complete pipeline from data preprocessing and TF-IDF vectorization to Logistic Regression classification.
+- **Predictive Scoring**: Estimate final exam marks using input parameters like Study Hours, Attendance, and Previous Performance.
+- **Lifestyle Impact Analysis**: Factors in Sleep Hours, Internet Usage, and Extracurricular Activities to provide a holistic prediction.
+- **Automated ML Pipeline**: Implements a Scikit-Learn Pipeline that handles Feature Scaling (Standardization) and Categorical Encoding (One-Hot) seamlessly.
+- **Random Forest Backbone**: Driven by a Random Forest Regressor for superior non-linear pattern recognition.
+- **Interactive Dashboard**: Polished Streamlit UI for real-time adjustments and instant predictions.
 
 ## 🛠️ Technology Stack
-- **Backend / ML**: Python, Scikit-Learn (Logistic Regression), NLTK, Pandas.
-- **Preprocessing**: TF-IDF Vectorization, Regex-based cleaning.
-- **Frontend**: Streamlit (with Custom CSS-in-JS styling).
-- **Design**: Modern Glassmorphism, Google Fonts (Outfit & Inter).
+- **Machine Learning**: Python, Scikit-Learn (Random Forest), NumPy, Pandas.
+- **Preprocessing**: Pipeline architecture with ColumnTransformer (StandardScaler & OneHotEncoder).
+- **Frontend**: Streamlit.
+- **Serialization**: Pickle for model persistence.
 
 ## 📁 Project Structure
-- `app.py`: The main logic for the professional GuardianAI web interface.
-- `train_model.py`: Robust script for cleaning data, training the model, and saving engine weights.
-- `Fake.csv` / `True.csv`: Datasets used for training (Standard news article format).
-- `vectorizer.pkl` / `model.pkl`: Serialized model artifacts for production use.
-- `metrics.pkl`: Performance tracking metadata.
+- `app.py`: Streamlit application for the interactive web interface.
+- `train_model.py`: Training script for data generation, preprocessing, and model fitting.
+- `student_data.csv`: The synthetic high-quality dataset used for the model.
+- `model_pipeline.pkl`: The serialized Scikit-Learn pipeline (Preprocessing + Regressor).
+- `metrics.pkl`: Accuracy metrics (R² score).
 
 ## 🏃 Quick Start
 
@@ -29,24 +29,22 @@ GuardianAI is a professional-grade, AI-powered tool designed to detect misinform
 pip install -r requirements.txt
 ```
 
-### 2. Train the Model (Optional)
-If you wish to retrain the engine with the provided datasets:
+### 2. Train and Generate Model
 ```bash
 python train_model.py
 ```
 
-### 3. Launch the Application
-Start the professional dashboard:
+### 3. Launch App
 ```bash
 streamlit run app.py
 ```
 
 ## 📄 Resume-Ready Description
-> **GuardianAI Forensic System (NLP & Machine Learning)**
-> - Engineered an AI-driven veracity analysis engine using Python and Scikit-Learn to detect misinformation in digital news.
-> - Implemented a TF-IDF vectorization pipeline with custom linguistic preprocessing for high-accuracy text classification.
-> - Developed a modern, glassmorphism-themed telemetry dashboard using Streamlit to visualize model confidence and article forensics.
-> - Achieving rapid-response verification with a Logistic Regression backbone trained on standardized news datasets.
+> **Student Academic Performance Forecaster (Machine Learning)**
+> - Developed a predictive analytics platform using Python and Random Forest Regression to estimate student exam scores with high precision (R² Score).
+> - Engineered an automated Scikit-Learn pipeline to handle complex preprocessing, including feature scaling and categorical encoding of lifestyle data.
+> - Built a real-time interactive dashboard in Streamlit to allow users to visualize the impact of behavioral variables on academic outcomes.
+> - Optimized model performance through tree-based ensemble methods and robust data normalization.
 
 ---
-Developed with ❤️ by **Arun Sharma** | *Building the Future of Information Integrity.*
+Developed with ❤️ by **Arun Sharma** | *Empowering Education through Data Science.*
